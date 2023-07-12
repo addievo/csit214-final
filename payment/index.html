@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/payment.css">
+</head>
+<body>
+<header>
+    <div class="inner-header">
+        <div class="center">
+            <div class="company-name">
+                <a href="../index.html">
+                    <span>FlyDreamAir</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="cart-container">
+    <div class="cart-dropdown-content">
+        <div class="cart-product">
+            <div class="section">
+                <div class="cart-image">
+                    <img class="cart-img" src="../images/product.jpeg" alt="product name">
+                </div>
+            </div>
+            <div class="section cart-description">
+                <div class="cart-name">
+                    <p>
+                        ést.lab Lumiwhite 10% PHA Resurfacing Glow Serum 30
+                    </p>
+                </div>
+                <div class="cart-price">
+                                            <span>
+                                                Price: 1 x $99.99 or 10,999
+                                            </span>
+                </div>
+            </div>
+        </div>
+        <div class="total">
+            <span><b>Total: $99.99</b> or 10,999 points</span>
+        </div>
+    </div>
+</div>
+<div class="billing-container">
+    <div class="deliveries" id="deliveries">
+        <div class="billing-information">
+            <h1>Delivery Method</h1>
+            <form id="address-form">
+                <div class="section">
+                    <div class="form-control">
+                        <p>Title*</p>
+                        <input class="input" type="text" id="title">
+                        <small>Error</small>
+                    </div>
+                    <div class="form-control">
+                        <p>First name*</p>
+                        <input class="input" type="text" id="firstname">
+                        <small>Error</small>
+                    </div>
+                    <div class="form-control">
+                        <p>Last name*</p>
+                        <input class="input" type="text" id="lastname">
+                        <small>Error</small>
+                    </div>
+                </div>
+                <div class="section stretch">
+                    <div class="stretch form-control">
+                        <p>Email Address*</p>
+                        <input class="input" type="text" id="email">
+                        <small>Error</small>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="stretch form-control">
+                        <p>Mobile Number*</p>
+                        <input class="input" type="text" id="number">
+                        <small>Error</small>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="form-control">
+                        <p>Date of Birth*</p>
+                        <input class="input" type="date" id="dob">
+                        <small>Error</small>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="form-control">
+                        <p>Country*</p>
+                        <input class="input" type="text" id="country">
+                        <small>Error</small>
+                    </div>
+                    <div class="form-control">
+                        <p>Address*</p>
+                        <input class="input" type="text" id="address">
+                        <small>Error</small>
+                    </div>
+                    <button class="primary-btn">Next</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="payments" id="payments">
+        <h1>Payment</h1>
+        <form id="payment-form">
+            <div class="form-control">
+                <h3 class="method">Shipping Method</h3>
+                <select class="input">
+                    <option value="standard">
+                        Australian Standard - $14.99
+                    </option>
+                    <option value="express">
+                        Australia Express - $24.99
+                    </option>
+                </select>
+            </div>
+            <div class="form-control">
+                <h3>Shipping Information</h3>
+                <div class="address">
+                    <h2 class="heading">Shipping</h2>
+                    <div class="details">
+                        <div class="detail">
+                            <span>John Doe</span>
+                        </div>
+                        <div class="detail">
+                            <span>1 Sydney Street</span>
+                        </div>
+                        <div class="detail">
+                            <span>Sydney, NSW, 1234</span>
+                        </div>
+                        <div class="detail">
+                            <span>Australia</span>
+                        </div>
+                        <div class="detail">
+                            <span>+61 1234 567 890</span>
+                        </div>
+                    </div>
+                    <span><u>Edit</u></span>
+                </div>
+                <div class="address">
+                    <h2 class="heading">Billing</h2>
+                    <div class="details">
+                        <div class="detail">
+                            <span>John Doe</span>
+                        </div>
+                        <div class="detail">
+                            <span>1 Sydney Street</span>
+                        </div>
+                        <div class="detail">
+                            <span>Sydney, NSW, 1234</span>
+                        </div>
+                        <div class="detail">
+                            <span>Australia</span>
+                        </div>
+                        <div class="detail">
+                            <span>+61 1234 567 890</span>
+                        </div>
+
+
+                    </div>
+                    <span><u>Edit</u></span>
+                </div>
+            </div>
+            <div class="payment-card">
+                <h3>Secure Card Payment</h3>
+            </div>
+            <div class="section">
+                <div class="form-control">
+                    <p>Card Holder Name*</p>
+                    <input class="input" type="text" id="holder">
+                </div>
+            </div>
+            <div class="section">
+                <div class="form-control">
+                    <p>Card Number*</p>
+                    <input class="input" type="text" id="card-number">
+                    <small>Error</small>
+                </div>
+            </div>
+            <div class="section">
+                <div class="form-control">
+                    <p>Expiry Date*</p>
+                    <input class="input" type="month" placeholder="Month" id="expiry">
+                    <small>Error</small>
+                </div>
+                <div class="form-control">
+                    <p>CVV/CCV*</p>
+                    <input class="input" type="number" id="cvv">
+                    <small>Error</small>
+                </div>
+            </div>
+            <button type="submit" class="submit">Pay now</button>
+        </form>
+
+    </div>
+</div>
+<script src="../js/address-validation.js"></script>
+<script src="../js/payment-validation.js"></script>
+<script src="../js/js.js"></script>
+</body>
+</html>

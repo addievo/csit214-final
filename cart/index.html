@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/cart.css">
+</head>
+<body>
+<header>
+    <div class="inner-header">
+        <div class="left-side">
+            <div class="hamburger-menu">
+                <img class="icon" src="../../images/menu.svg" alt="menu">
+            </div>
+            <div class="product-details">
+                <div class="currency">
+                    <img class="icon" src="../../images/aud.svg" alt="aud">
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="search">
+                </div>
+            </div>
+
+        </div>
+        <div class="center">
+            <div class="company-name">
+                <a href="../../home/index.html">
+                    <span>FlyDreamAir</span>
+                </a>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="user-navigation">
+                <div class="cart icon-container">
+                    <div class="dropdown">
+                        <a href="../../cart/index.html">
+                            <div class="cart-quantity">
+                                <span>1</span>
+                            </div>
+                            <img class="icon" src="../../images/shopping-cart.svg" alt="cart">
+                        </a>
+                        <!-- if user hasn't added anything to cart
+                        <div class="cart-dropdown-content">
+                        <p>Start shopping now</p>
+                            <a href="#">
+                                <button class="btn black-btn">Start</button>
+                            </a>
+
+                        </div>
+
+                        -->
+
+                        <!-- if user has added a product to cart -->
+                        <div class="cart-dropdown-content">
+                            <div class="cart-product">
+                                <div class="section">
+                                    <div class="cart-image">
+                                        <img class="cart-img" src="../../images/product.jpeg" alt="product name">
+                                    </div>
+                                </div>
+                                <div class="section cart-description">
+                                    <div class="cart-name">
+                                        <p>
+                                            ést.lab Lumiwhite 10% PHA Resurfacing Glow Serum 30
+                                        </p>
+                                    </div>
+                                    <div class="cart-price">
+                                            <span>
+                                                Price: 1 x $99.99 or 10,999
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total">
+                                <span><b>Total: $99.99</b> or 10,999 points</span>
+                                <button class="stretch primary-btn">Go To Cart</button>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <a href="../../profile/wishlist/index.html">
+                    <div class="wishlist icon-container">
+                        <div class="wishlist-quantity">
+                            <span>1</span>
+                        </div>
+                        <img class="icon" src="../../images/wishlist.svg" alt="wishlist">
+                    </div>
+                </a>
+                <div class="user-profile icon-container">
+                    <div class="dropdown">
+
+                        <!-- if user has not logged in
+                        <img class="icon" src="../../images/user.svg" alt="profile">
+                        <div class="dropdown-content">
+                          <a href="../../login/index.html">
+                            <button class="btn black-btn">Log In</button>
+                          </a>
+                          <button class="btn black-btn">Sign Up</button>
+                        </div>
+                        -->
+
+                        <!-- if user has logged in -->
+                        <a href="../../profile/index.html">
+                            <img class="icon" src="../../images/user-logged-in.svg" alt="profile">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation-filters">
+        <span class="categories">
+            Categories
+        </span>
+        <span class="brands">
+            Brands
+        </span>
+        <span class="deals">
+            Deals
+        </span>
+    </div>
+    <div class="menu">
+        <img class="icon close" src="../images/close.svg" alt="exit">
+        <div class="list">
+            <div class="search">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="currency"></div>
+            <div class="navigation">
+                <div class="category">
+                    <span>Categories</span>
+                </div>
+                <div class="category">
+                    <span>Brands</span>
+                </div>
+                <div class="category">
+                    <span>Deals</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="products">
+        <h1 class="heading">My Cart</h1>
+
+        <div class="cart">
+            <h3>Total Items (2)</h3>
+            <hr>
+            <div class="product">
+                <div class="section">
+                    <div class="image">
+                        <img class="product-img" src="../images/product.jpeg" alt="product name">
+                    </div>
+                </div>
+                <div class="section">
+                    <p class="name">
+                        ést.lab Lumiwhite 10% PHA Resurfacing Glow Serum 30
+                    </p>
+                    <div class="delete">
+                        <img class="icon" src="../images/trash.svg" alt="delete">
+                        <span>Delete</span>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="price">
+                        <div class="real-currency">
+                        <span>
+                            $99.99
+                        </span>
+                        </div>
+                        <div class="loyalty-points">
+                        <span>
+                            or 10,999 points
+                        </span>
+                        </div>
+                    </div>
+                    <div class="quantity-container">
+
+                        <form>
+                            <label><span>Quantity</span>
+                                <div class="value-button decrease">-</div>
+                                <input class="quantity" type="number" value="1" />
+                            </label>
+                            <div class="value-button increase">+</div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="section">
+                    <div class="image">
+                        <img class="product-img" src="../images/product.jpeg" alt="product name">
+                    </div>
+                </div>
+                <div class="section">
+                    <p class="name">
+                        ést.lab Lumiwhite 10% PHA Resurfacing Glow Serum 30
+                    </p>
+                    <div class="delete">
+                        <img class="icon" src="../images/trash.svg" alt="delete">
+                        <span>Delete</span>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="price">
+                        <div class="real-currency">
+                        <span>
+                            $99.99
+                        </span>
+                        </div>
+                        <div class="loyalty-points">
+                        <span>
+                            or 10,999 points
+                        </span>
+                        </div>
+                    </div>
+                    <div class="quantity-container">
+
+                        <form>
+                            <label><span>Quantity</span>
+                                <div class="value-button decrease">-</div>
+                                <input class="quantity" type="number" value="1" />
+                            </label>
+                            <div class="value-button increase">+</div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="subtotal">
+                    <div class="real-currency">
+                        <span>
+                            Subtotal: <b>$99.99</b> or 10,999 points
+                        </span>
+                    </div>
+            </div>
+
+        </div>
+        <a href="../payment">
+            <button class="checkout-btn">Checkout</button>
+        </a>
+    </div>
+</div>
+<footer>
+    <div class="inner-footer">
+        <div class="cards">
+            <div class="card">
+                <img class="icon" src="../../images/cards/visa.jpeg" alt="visa">
+            </div>
+            <div class="card">
+                <img class="icon" src="../../images/cards/mastercard.png" alt="mastercard">
+            </div>
+            <div class="card">
+                <img class="icon" src="../../images/cards/paypal.webp" alt="paypal">
+            </div>
+            <div class="card">
+                <img class="icon" src="../../images/cards/amax.png" alt="amax" style="background-color: white">
+            </div>
+            <div class="card">
+                <img class="icon" src="../../images/cards/maestro.png" alt="maestro">
+            </div>
+            <div class="card">
+                <img class="icon" src="../../images/cards/clearpay.webp" alt="clearpay">
+            </div>
+            <div class="card">
+                <img class="icon" src="../../images/cards/dci2.webp" alt="dci">
+            </div>
+            <div class="card">
+                <img class="icon" src="../../images/cards/apple.jpeg" alt="apple pay">
+            </div>
+        </div>
+        <div class="information">
+
+            <div class="group">
+                <h2>FlyAirDream Shop</h2>
+                <ul>
+                    <li>
+                        About Us
+                    </li>
+                    <li>
+                        Shopping Guide
+                    </li>
+                    <li>
+                        Earn & Redeem Points
+                    </li>
+                    <li>
+                        FlyDreamAir Programme
+                    </li>
+                </ul>
+            </div>
+            <div class="group">
+                <h2>Customer Service</h2>
+                <ul>
+                    <li>
+                        FAQ
+                    </li>
+                    <li>
+                        Order Tracking
+                    </li>
+                    <li>
+                        Delivery
+                    </li>
+                    <li>
+                        Returns
+                    </li>
+                </ul>
+            </div>
+            <div class="group">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li>
+                        fdashopcustomercare@flyairdream.com
+                    </li>
+                    <li>
+                        +64 1234 5678
+                    </li>
+                    <li>
+                        Mon to Fri: 8:30am to 5:30pm (AEST)
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="group">
+                <h2>
+                    My Account
+                </h2>
+                <ul>
+                    <li>
+                        Order History
+                    </li>
+                    <li>
+                        Track My Order
+                    </li>
+                    <li>
+                        My Wishlist
+                    </li>
+                    <li>
+                        View Cart
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-links">
+            <h2>Follow us</h2>
+            <div class="social first">
+                <img class="icon" src="../../images/social/instagram.svg" alt="instagram">
+            </div>
+            <div class="social">
+                <img class="icon" src="../../images/social/facebook.svg" alt="facebook">
+            </div>
+            <div class="social">
+                <img class="icon" src="../../images/social/twitter.svg" alt="twitter">
+            </div>
+            <div class="social">
+                <img class="icon" src="../../images/social/youtube.svg" alt="youtube">
+            </div>
+        </div>
+
+        <div class="company-name">
+            <span>FlyDreamAir</span>
+        </div>
+
+        <div class="extra">
+            <div class="footer-links">
+                <span>Terms and Conditions</span>
+            </div>
+            <div class="footer-links">
+                <span>Privacy Policy</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="mobile-company-name">
+    <span>FlyDreamAir</span>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../js/js.js"></script>
+<script src="../js/profile-validation.js"></script>
+</body>
+</html>

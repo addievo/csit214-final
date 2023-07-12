@@ -1,0 +1,252 @@
+
+a {
+    text-decoration: none;
+    color: #292129;
+}
+
+header {
+    width: 100%;
+    background-color: #FAF7FA;
+    margin: 0;
+    z-index: 4;
+    position: fixed;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: left;
+}
+
+.inner-header {
+    padding: 15px;
+}
+
+.cart-img {
+    width: 100px;
+    height: 100px;
+}
+
+.cart-product {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    border-bottom: #292129 1px solid;
+    position: relative;
+}
+
+.cart-product:last-child {
+    border-bottom: none;
+}
+
+.cart-description {
+    padding-left: 20px;
+}
+
+hr {
+    margin-bottom: 50px;
+}
+
+.cart-name {
+    text-transform: uppercase;
+    width: 90%;
+    font-size: 12px;
+}
+
+.cart-price {
+    font-size: 12px;
+}
+
+.total {
+    padding: 20px;
+}
+
+.total .stretch {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cart-quantity {
+    position: absolute;
+    left: 3px;
+    right: 0;
+    top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20px;
+    text-align: center;
+    font-size: 8px;
+}
+
+.company-name span {
+    font-family: Poppins, sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.center .company-name span {
+    font-size: 48px;
+}
+
+.center .company-name {
+    text-align: center;
+}
+
+.billing-container {
+    margin: 200px auto 200px 50px;
+    background-color: white;
+    display: inline-block;
+    width: 60%;
+    padding: 50px;
+}
+
+.cart-container {
+    display: inline-block;
+    right: 0;
+    margin-top: 200px;
+    position: fixed;
+    width: 30%;
+    background-color: white;
+    padding: 50px;
+    margin-right: 50px;
+}
+
+
+.section {
+    display: block;
+}
+
+.form-control {
+    display: inline-block;
+    position: relative;
+}
+
+#number, #email {
+    width: 100%;
+}
+
+.form-control p {
+    font-size: 16px;
+}
+
+.form-control p {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.input {
+    background-color: #FAF7FA;
+    padding: 25px;
+    border: none;
+    display: block;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.input-error {
+    border: 2px solid #e74c3c;
+}
+
+small {
+    color: #e74c3c;
+    display: none;
+    margin: 0 0 25px 0;
+}
+
+.error small {
+    display: block;
+}
+
+form, .section {
+    position: relative;
+    width: 100%;
+}
+
+.stretch {
+    width: 100%;
+}
+
+#payments {
+    display: none;
+}
+
+.address {
+    display: inline-block;
+    background-color: #F8F8F8;
+    margin: 20px 20px 20px 0;
+    padding: 30px;
+}
+
+.details {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.detail > p:first-child {
+    font-weight: bold;
+}
+
+.detail p {
+    display: inline-block;
+}
+
+.billing-information {
+    width: 100%;
+}
+
+select {
+    float: left;
+}
+
+h3 {
+    margin-top: 100px;
+}
+
+.method {
+    margin-top: 0;
+}
+
+.submit {
+    background-color: #292129;
+    color: white;
+}
+
+u {
+    color: #8A646B;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .address {
+        width: 100%;
+    }
+
+    .billing-container, .cart-container {
+        position: relative;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    button {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 769px) {
+
+    .address {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 1100px) {
+
+    .address {
+        width: 300px;
+    }
+
+}

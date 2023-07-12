@@ -1,0 +1,79 @@
+
+h3 {
+    font-size: 19px;
+}
+
+.heading {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.rewards-container {
+    position: relative;
+}
+
+.detail {
+    margin: 25px 0;
+    font-size: 16px;
+}
+
+#progress-container {
+    position: relative;
+    width: 50%;
+}
+
+.progress .progress-bar {
+    box-shadow: none;
+    position: relative;
+    border-radius: 20px;
+    animation: animate-postive 2s;
+    background-color: #B27A6F;
+}
+
+#progress-bar-2 {
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.progress {
+    height: 20px;
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: none;
+    overflow: visible;
+    background-color: #D0D0D0;
+}
+
+.products {
+    margin-top: 17px;
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .rewards-container {
+        margin-top: 150px;
+    }
+
+
+}
+
+@media only screen and (min-width: 769px) {
+
+    .rewards-container {
+        margin-top: 200px;
+    }
+
+}

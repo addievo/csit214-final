@@ -1,0 +1,161 @@
+
+.name h2 {
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+}
+
+.container {
+    margin: 200px auto 80px auto;
+    height: 700px;
+}
+
+.content {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.content .left-side {
+    float: left;
+    width: 40%;
+}
+
+.content .right-side {
+    width: 50%;
+    float: right;
+}
+
+.image .product {
+    width: 80%;
+    float: right;
+}
+
+.product .description {
+    font-family: inherit;
+}
+
+.real-currency {
+    margin-top: 40px;
+    font-size: 48px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+}
+
+.loyalty-points {
+    font-size: 24px;
+    color: #989898;
+}
+
+.quantity input {
+    margin: 40px 0;
+    padding: 15px;
+    border: none;
+    width: 40%;
+}
+
+.add .primary-btn {
+    width: 45%;
+}
+
+.wishlist-btn {
+    display: inline-block;
+    background-color: #ABA9A9;
+    padding: 18px 18px 11px 18px;
+    position: relative;
+    left: 20px;
+    top: 11px;
+}
+
+.wishlist-btn:hover {
+    background-color: #CBBCC1;
+}
+
+button {
+    display: inline-block;
+}
+
+.wishlist-btn .icon {
+    width: 30px;
+}
+
+#quantity {
+    position: relative;
+    bottom: 50px;
+}
+
+.add {
+    position: relative;
+    bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        margin: 50px auto 80px auto;
+        height: 700px;
+    }
+
+    .content .right-side {
+        top: 300px;
+        width: 100%;
+    }
+
+    .content .left-side {
+        width: 300px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .image .product {
+        margin: 50px 0;
+        text-align: center;
+        position: relative;
+        right: 30px
+    }
+
+    .quantity input {
+        width: 90%;
+    }
+
+    .add .primary-btn {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        margin: 150px auto 80px auto;
+        height: 700px;
+    }
+
+    .content {
+        position: relative;
+    }
+
+    .content .right-side {
+        top: 300px;
+        width: 100%;
+    }
+
+    .content .left-side {
+        width: 300px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .image .product {
+        margin: 50px 0;
+        text-align: center;
+        position: relative;
+        right: 30px
+    }
+
+    .quantity input {
+        width: 90%;
+    }
+
+    .add .primary-btn {
+        width: 95%;
+    }
+}

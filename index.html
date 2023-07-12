@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome To The FlyDreamAir Shop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/footer.css">
+  <link rel="stylesheet" href="style/main.css">
+  <style>
+
+    body {
+      background-color: #F5F5F5;
+    }
+
+    .wrap {
+     width: 100%;
+      margin: 120px 0;
+    }
+
+    #myCarousel {
+      position: relative;
+    }
+
+  .fragrance-header {
+    font-family: Italiana, serif;
+    text-align: left;
+    text-transform: none;
+  }
+
+  .item {
+    position: relative;
+  }
+
+  .fragrance-info {
+    position: absolute;
+    color: white;
+    right: 100px;
+    top: 40%;
+    transform: translateY(-40%);
+    width: 40%;
+  }
+
+  .fragrance-header {
+    color: white;
+    font-size: 4vw;
+    margin-bottom: 40px;
+  }
+
+  .fragrance-description {
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+
+  button {
+    color: #292129;
+  }
+
+  .carousel-indicators {
+    bottom: -30px;
+    z-index: 0;
+  }
+
+  .carousel-indicators li {
+    background-color: #CBBCC1;
+    border: none;
+    border-radius: 0;
+    width: 100px;
+    height: 5px;
+  }
+
+  .carousel-indicators .active {
+    background-color: #8A646B;
+    position: relative;
+    bottom: 1px;
+    width: 100px;
+    height: 5px;
+  }
+
+  .section {
+    margin: 150px 0;
+  }
+
+  .categories {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  .shop-category {
+    background-color: #8A646B;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin: 10px;
+    bottom: 0;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .shop-category:hover {
+    bottom: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+
+    .shop-category .description {
+      background-color: white;
+      padding: 20px;
+    }
+
+  .category-img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  </style>
+</head>
+<body>
+<header>
+  <div class="inner-header">
+    <div class="left-side">
+      <div class="hamburger-menu">
+        <img class="icon" src="../../images/menu.svg" alt="menu">
+      </div>
+      <div class="product-details">
+        <div class="currency">
+          <img class="icon" src="../../images/aud.svg" alt="aud">
+        </div>
+        <div class="search">
+          <input type="text" placeholder="search">
+        </div>
+      </div>
+
+    </div>
+    <div class="center">
+      <div class="company-name">
+        <a href="../../home/index.html">
+          <span>FlyDreamAir</span>
+        </a>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="user-navigation">
+        <div class="cart icon-container">
+          <div class="dropdown">
+            <a href="../../cart/index.html">
+              <div class="cart-quantity">
+                <span>1</span>
+              </div>
+              <img class="icon" src="../../images/shopping-cart.svg" alt="cart">
+            </a>
+            <!-- if user hasn't added anything to cart
+            <div class="cart-dropdown-content">
+            <p>Start shopping now</p>
+                <a href="#">
+                    <button class="btn black-btn">Start</button>
+                </a>
+
+            </div>
+
+            -->
+
+            <!-- if user has added a product to cart -->
+            <div class="cart-dropdown-content">
+              <div class="cart-product">
+                <div class="section">
+                  <div class="cart-image">
+                    <img class="cart-img" src="../../images/product.jpeg" alt="product name">
+                  </div>
+                </div>
+                <div class="section cart-description">
+                  <div class="cart-name">
+                    <p>
+                      ést.lab Lumiwhite 10% PHA Resurfacing Glow Serum 30
+                    </p>
+                  </div>
+                  <div class="cart-price">
+                                            <span>
+                                                Price: 1 x $99.99 or 10,999
+                                            </span>
+                  </div>
+                </div>
+              </div>
+              <div class="total">
+                <span><b>Total: $99.99</b> or 10,999 points</span>
+                <button class="stretch primary-btn">Go To Cart</button>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+        <a href="../../profile/wishlist/index.html">
+          <div class="wishlist icon-container">
+            <div class="wishlist-quantity">
+              <span>1</span>
+            </div>
+            <img class="icon" src="../../images/wishlist.svg" alt="wishlist">
+          </div>
+        </a>
+        <div class="user-profile icon-container">
+          <div class="dropdown">
+
+            <!-- if user has not logged in
+            <img class="icon" src="../../images/user.svg" alt="profile">
+            <div class="dropdown-content">
+              <a href="../../login/index.html">
+                <button class="btn black-btn">Log In</button>
+              </a>
+              <button class="btn black-btn">Sign Up</button>
+            </div>
+            -->
+
+            <!-- if user has logged in -->
+            <a href="../../profile/index.html">
+              <img class="icon" src="../../images/user-logged-in.svg" alt="profile">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navigation-filters">
+        <span class="categories">
+            Categories
+        </span>
+    <span class="brands">
+            Brands
+        </span>
+    <span class="deals">
+            Deals
+        </span>
+  </div>
+  <div class="menu">
+    <img class="icon close" src="../images/close.svg" alt="exit">
+    <div class="list">
+      <div class="search">
+        <input type="text" placeholder="search">
+      </div>
+      <div class="currency"></div>
+      <div class="navigation">
+        <div class="category">
+          <span>Categories</span>
+        </div>
+        <div class="category">
+          <span>Brands</span>
+        </div>
+        <div class="category">
+          <span>Deals</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+<div class="wrap">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="fragrance-info">
+          <h1 class="fragrance-header">Find your signature fragrance</h1>
+          <p class="fragrance-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a href="categories/index.html">
+            <button class="primary-btn">Shop now</button>
+          </a>
+        </div>
+
+        <img src="images/carousel/perfume.png" alt="perfume" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/carousel/technology.png" alt="Chicago" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="ny.jpg" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div class="section">
+    <h1>Shop By</h1>
+    <div class="categories">
+      <div class="shop-category">
+        <div class="image">
+          <img class="category-img" src="images/makeup.jpg" alt="makeup">
+        </div>
+        <div class="description">Beauty</div>
+      </div>
+      <div class="shop-category">
+        <div class="image">
+          <img class="category-img" src="images/fitness.jpg" alt="fitness">
+        </div>
+        <div class="description">Health & Wellness</div>
+      </div>
+      <div class="shop-category">
+        <div class="image">
+          <img class="category-img" src="images/kitchen.jpg" alt="kettle">
+        </div>
+        <div class="description">Home</div>
+      </div>
+      <div class="shop-category">
+        <div class="image">
+          <img class="category-img" src="images/travel.jpg" alt="suitcase">
+        </div>
+        <div class="description">Travel</div>
+      </div>
+      <div class="shop-category">
+        <div class="image">
+          <img class="category-img" src="images/wine-bottle.jpg" alt="wine">
+        </div>
+        <div class="description">Wines & Spirits</div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <h1>Check Out</h1>
+    <div class="categories">
+      <div class="shop-category">
+        <div class="image">
+          <img class="category-img" src="images/watch.jpg" alt="watch">
+        </div>
+        <div class="description">Cartier</div>
+      </div>
+      <div class="shop-category">
+        <div class="image">
+          <img class="category-img" src="images/phone.jpg" alt="iphone">
+        </div>
+        <div class="description">Apple</div>
+      </div>
+      <div class="shop-category">
+        <div class="image">
+          <img class="category-img" src="images/smeg.jpeg" alt="smeg">
+        </div>
+        <div class="description">Smeg</div>
+      </div>
+      <div class="shop-category">
+        <div class="image">
+          <img class="category-img" src="images/bag.jpg" alt="bag">
+        </div>
+        <div class="description">Saint Laurant</div>
+      </div>
+      <div class="shop-category">
+        <div class="image">
+          <img class="category-img" src="images/wine.jpg" alt="wine">
+        </div>
+        <div class="description">Jacob's Creek</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<footer>
+  <div class="inner-footer">
+    <div class="cards">
+      <div class="card">
+        <img class="icon" src="../../images/cards/visa.jpeg" alt="visa">
+      </div>
+      <div class="card">
+        <img class="icon" src="../../images/cards/mastercard.png" alt="mastercard">
+      </div>
+      <div class="card">
+        <img class="icon" src="../../images/cards/paypal.webp" alt="paypal">
+      </div>
+      <div class="card">
+        <img class="icon" src="../../images/cards/amax.png" alt="amax" style="background-color: white">
+      </div>
+      <div class="card">
+        <img class="icon" src="../../images/cards/maestro.png" alt="maestro">
+      </div>
+      <div class="card">
+        <img class="icon" src="../../images/cards/clearpay.webp" alt="clearpay">
+      </div>
+      <div class="card">
+        <img class="icon" src="../../images/cards/dci2.webp" alt="dci">
+      </div>
+      <div class="card">
+        <img class="icon" src="../../images/cards/apple.jpeg" alt="apple pay">
+      </div>
+    </div>
+    <div class="information">
+
+      <div class="group">
+        <h2>FlyAirDream Shop</h2>
+        <ul>
+          <li>
+            About Us
+          </li>
+          <li>
+            Shopping Guide
+          </li>
+          <li>
+            Earn & Redeem Points
+          </li>
+          <li>
+            FlyDreamAir Programme
+          </li>
+        </ul>
+      </div>
+      <div class="group">
+        <h2>Customer Service</h2>
+        <ul>
+          <li>
+            FAQ
+          </li>
+          <li>
+            Order Tracking
+          </li>
+          <li>
+            Delivery
+          </li>
+          <li>
+            Returns
+          </li>
+        </ul>
+      </div>
+      <div class="group">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>
+            fdashopcustomercare@flyairdream.com
+          </li>
+          <li>
+            +64 1234 5678
+          </li>
+          <li>
+            Mon to Fri: 8:30am to 5:30pm (AEST)
+          </li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="group">
+        <h2>
+          My Account
+        </h2>
+        <ul>
+          <li>
+            Order History
+          </li>
+          <li>
+            Track My Order
+          </li>
+          <li>
+            My Wishlist
+          </li>
+          <li>
+            View Cart
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="social-links">
+      <h2>Follow us</h2>
+      <div class="social first">
+        <img class="icon" src="../../images/social/instagram.svg" alt="instagram">
+      </div>
+      <div class="social">
+        <img class="icon" src="../../images/social/facebook.svg" alt="facebook">
+      </div>
+      <div class="social">
+        <img class="icon" src="../../images/social/twitter.svg" alt="twitter">
+      </div>
+      <div class="social">
+        <img class="icon" src="../../images/social/youtube.svg" alt="youtube">
+      </div>
+    </div>
+
+    <div class="company-name">
+      <span>FlyDreamAir</span>
+    </div>
+
+    <div class="extra">
+      <div class="footer-links">
+        <span>Terms and Conditions</span>
+      </div>
+      <div class="footer-links">
+        <span>Privacy Policy</span>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
